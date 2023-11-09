@@ -28,9 +28,9 @@ form.addEventListener("submit", (e) => {
         api.open("GET", url, true);
         api.send();
        
-      //   document.getElementById("alert-message").innerHTML =
-      //     "Successful";
-      // });
+        document.getElementById("alert-message").innerHTML =
+          "Successful";
+      });
 
 
 
