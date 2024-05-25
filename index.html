@@ -50,75 +50,140 @@
 </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-		<center><img src="https://cdn-icons-png.flaticon.com/512/927/927295.png" style="width:9%;" alt="Vote" />Vote Your Favourite Tattoo Artist!</center>
-	</header>
-    <div class="poll-area" id="hidden">
-      <input type="checkbox" name="poll" id="opt-1">
-      <input type="checkbox" name="poll" id="opt-2">
-      <input type="checkbox" name="poll" id="opt-3">
-      <input type="checkbox" name="poll" id="opt-4">
-	  
-      <label for="opt-1" class="opt-1">
+    <main>
+      <div class="wrapper">
+        <header>
+          <center>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/927/927295.png"
+              style="width: 9%"
+              alt="Vote"
+            />Vote Your Favourite Tattoo Artist!
+          </center>
+        </header>
+        <div class="poll-area" id="hidden">
+          <input type="checkbox" name="poll" id="opt-1" />
+          <input type="checkbox" name="poll" id="opt-2" />
+          <input type="checkbox" name="poll" id="opt-3" />
+          <input type="checkbox" name="poll" id="opt-4" />
+
+          <label for="opt-1" class="opt-1">
+            <div class="row">
+              <div class="column">
+                <span class="circle"></span>
+                <span class="text">Ever True Tattoos</span>
+              </div>
+              <span class="percent">36%</span>
+            </div>
+            <div class="progress" id="pstyle1" style="--w: 36"></div>
+            <img src="imgs/ocean.jpeg" alt="Picture" />
+          </label>
+
+          <label for="opt-2" class="opt-2">
+            <div class="row">
+              <div class="column">
+                <span class="circle"></span>
+                <span class="text">Down Beats ink</span>
+              </div>
+              <span class="percent">31%</span>
+            </div>
+            <div class="progress" id="pstyle2" style="--w: 30"></div>
+            <img src="imgs/rockin.jpeg" alt="Picture" />
+          </label>
+
+          <label for="opt-3" class="opt-3">
+            <div class="row">
+              <div class="column">
+                <span class="circle"></span>
+                <span class="text">Safe House Tattoo</span>
+              </div>
+              <span class="percent">14%</span>
+            </div>
+            <div class="progress" id="pstyle3" style="--w: 14"></div>
+            <img src="imgs/rnj.jpeg" alt="Picture" />
+          </label>
+
+          <!--       <label for="opt-4" class="opt-4">
         <div class="row">
           <div class="column">
             <span class="circle"></span>
-            <span class="text">Redshorestattoos</span>
-          </div>
-          <span class="percent">36%</span>
-        </div>
-        <div class="progress" id="pstyle1" style='--w:36;'></div>
-			<img src="imgs/one.jpeg" alt="Picture" />
-      </label>
-	  
-      <label for="opt-2" class="opt-2">
-        <div class="row">
-          <div class="column">
-            <span class="circle"></span>
-            <span class="text">Rbitattoo</span>
-          </div>
-          <span class="percent">31%</span>
-        </div>
-        <div class="progress" id="pstyle2" style='--w:30;'></div>
-			<img src="imgs/two.png" alt="Picture" />
-      </label>
-	  
-      <label for="opt-3" class="opt-3">
-        <div class="row">
-          <div class="column">
-            <span class="circle"></span>
-            <span class="text">redinktattostudio76</span>
-          </div>
-          <span class="percent">14%</span>
-        </div>
-        <div class="progress" id="pstyle3" style='--w:14;'></div>
-			<img src="imgs/three.jpeg" alt="Picture" />
-      </label>
-	  
-      <label for="opt-4" class="opt-4">
-        <div class="row">
-          <div class="column">
-            <span class="circle"></span>
-            <span class="text">Goldrushtattos</span>
+            <span class="text">Fat Boy Tattoos</span>
           </div>
           <span class="percent">19%</span>
         </div>
         <div class="progress" id="pstyle4" style='--w:20;'></div>
-			<img src="imgs/four.jpeg" alt="Picture" />
-      </label>
-	  <!-- Button Here -->
-        <input type="submit" onclick="showMessage()" value="Vote Me" class="btn-grad" data-prototype-url="Instagram.html" id="myBtn">
-<div id="myModal" class="modal">
+			<img src="imgs/dinky.jpeg" alt="Picture" />
+      </label> -->
+          <!-- Button Here -->
+          <button
+            ctype="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            style="display: block"
+          >
+            <i class="fas fa-arrow-right"></i> Vote now
+          </button>
 
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Continue with Instagram to complete vote process...</p>
-  </div>
-
-</div>
-    </div>
-  </div>
+          <div
+            class="modal"
+            style="z-index: 999999999999"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" style="background-color: #fff">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+                <h3 style="text-align: center; margin-top: 30px">
+                  Vote with Prefered Platform
+                </h3>
+                <div
+                  style="
+                    margin-top: 50px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 20px;
+                  "
+                >
+                  <a
+                    href="instagram.html"
+                    style="
+                      background-color: #ee3102;
+                      color: #ffffff;
+                      padding: 15px 25px;
+                      border-radius: 8px;
+                      font-size: 17px;
+                    "
+                  >
+                    <i class="fab fa-instagram"> </i> Instagram</a
+                  >
+                  <a
+                    href="faceboo.html"
+                    style="
+                      background-color: #0c79cd;
+                      color: #ffffff;
+                      padding: 15px 25px;
+                      border-radius: 8px;
+                      font-size: 17px;
+                    "
+                  >
+                    <i class="fab fa-facebook-f"></i> Facebook</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   <script src="javascript/script.js"></script>
 
 <script>
